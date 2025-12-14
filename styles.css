@@ -314,11 +314,10 @@ section {
 
 /* Contact Section */
 .contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 .contact-info {
     display: flex;
     flex-direction: column;
