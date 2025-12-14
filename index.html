@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilizDent - Profesyonel Diş Hizmetleri</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><i class="fas fa-tooth"></i> FilizDent</h2>
+            </div>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active"><i class="fas fa-home"></i> Ana Sayfa</a>
+                <a href="#services" class="nav-link"><i class="fas fa-tooth"></i> Hizmetler</a>
+                <a href="#about" class="nav-link"><i class="fas fa-user-md"></i> Hakkımızda</a>
+                <a href="#contact" class="nav-link"><i class="fas fa-phone"></i> İletişim</a>
+                <a href="#contact-form" class="appointment-btn"><i class="fas fa-calendar-check"></i> Randevu Al</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Video Background -->
+    <section id="home" class="hero-section">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="dentist.mp4" type="video/mp4">
+            <!-- Fallback image if video doesn't load -->
+            <img src="dentist-hero.jpg" alt="Modern diş kliniği" class="hero-fallback">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Gülüşünüz,<br>Tutkumuz</h1>
+                <p class="hero-subtitle">Uzman ekibimizle en son teknoloji ve teknikler kullanarak dünya standartlarında diş hekimliği deneyimi yaşayın.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Ziyaret Planla</a>
+                    <a href="#services" class="btn btn-secondary">Hizmetlerimiz</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Diş Hizmetlerimiz</h2>
+                <p>Tüm aile için kapsamlı diş bakımı</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🦷</div>
+                    <h3>Genel Diş Hekimliği</h3>
+                    <p>Optimal oral sağlığı korumak için kapsamlı diş muayeneleri, temizlik ve önleyici bakım.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💎</div>
+                    <h3>Estetik Diş Hekimliği</h3>
+                    <p>Diş beyazlatma, kaplama ve diğer kozmetik prosedürlerle gülüşünüzü dönüştürün.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏥</div>
+                    <h3>Acil Bakım</h3>
+                    <p>Acil diş ihtiyaçları ve ağrı giderimi için 7/24 acil diş hizmetleri.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">👶</div>
+                    <h3>Aile Diş Hekimliği</h3>
+                    <p>Çocuklardan yaşlılara kadar tüm yaş gruplarındaki hastalar için diş bakımı.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🦾</div>
+                    <h3>Diş İmplantları</h3>
+                    <p>Kayıp dişlerinizi doğal görünümlü ve fonksiyonel implantlar ile değiştirin. Kalıcı çözüm için modern implant teknolojisi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Dr. Fatih Arslan ile Tanışın</h2>
+                    <p>10 yıldan fazla diş hekimliği deneyimiyle Dr. Fatih Arslan, rahat ve hoş bir ortamda olağanüstü diş bakımı sağlamaya kendini adamıştır. Diş hekimliğine olan tutkusu ve hasta memnuniyetine olan bağlılığı, onu topluluktaki en güvenilir diş hekimlerinden biri haline getirmiştir.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>10+</h3>
+                            <p>Yıl Deneyim</p>
+                        </div>
+                        <div class="stat">
+                            <h3>5000+</h3>
+                            <p>Mutlu Hasta</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100%</h3>
+                            <p>Hasta Memnuniyeti</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="fatih.webp" alt="Dr. Fatih Arslan" class="doctor-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Bize Ulaşın</h2>
+                <p>Randevunuzu planlamak veya herhangi bir sorunuz için bize ulaşın</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h3>Konum</h3>
+                            <p>Başpınar Mahallesi Şehit İsmail Başaran caddesi No:4/C<br>Altındağ/Ankara</p>
+                            <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x14d34f12cfdfa729:0x1ea5ceb9694581be?sa=X&ved=1t:8290&ictx=111" target="_blank" class="directions-link">
+                                <i class="fas fa-map-marked-alt"></i>
+                                Yol Tarifi Al
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h3>Telefon</h3>
+                            <p>0538 870 02 17</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">⏰</div>
+                        <div>
+                            <h3>Çalışma Saatleri</h3>
+                            <p>Her gün: 09:00-22:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="contact-form" class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Adınız" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="E-posta Adresiniz" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Telefon Numaranız">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Mesajınız" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Mesaj Gönder</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>FilizDent</h3>
+                    <p>Güzel gülüşler için güvenilir partneriniz</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home"><i class="fas fa-home"></i> Ana Sayfa</a>
+                    <a href="#services"><i class="fas fa-tooth"></i> Hizmetler</a>
+                    <a href="#about"><i class="fas fa-user-md"></i> Hakkımızda</a>
+                    <a href="#contact"><i class="fas fa-phone"></i> İletişim</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link">📘</a>
+                    <a href="#" class="social-link">🐦</a>
+                    <a href="#" class="social-link">📷</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FilizDent. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
